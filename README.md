@@ -1,2 +1,2 @@
 # FoundationsOfFrontend
-Foundations Of Frontend Web Development
+Project name: Website for BBQ Restaurant
