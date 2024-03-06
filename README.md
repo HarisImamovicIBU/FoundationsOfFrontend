@@ -1,2 +1,2 @@
 # Chill&Grill BBQ
-Project name: Website for BBQ Restaurant
+Project: Website for BBQ Restaurant
