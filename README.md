@@ -1,2 +1,2 @@
-# FoundationsOfFrontend
-Foundations Of Frontend Web Development
+# Chill&Grill BBQ
+Project: Website for BBQ Restaurant
