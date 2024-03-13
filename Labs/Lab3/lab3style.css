@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+
+.top{
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image{
+    margin-left: auto;
+    order: 1;
+    height: 100%;
+}
+
+.top img{
+    max-width: 100%;
+    height: 100%;
+}
+.text{
+    order: 2;
+}
+
+.text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+    text-align: center;
+}
+.footer {
+    background-color: coral;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 5px 0; 
+    color: black; 
+}
