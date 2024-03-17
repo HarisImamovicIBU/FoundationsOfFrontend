@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo img{
+    width: 110px;
+    height: 80px;
+    mix-blend-mode: multiply; /*Transparent bakcground*/
+}
+
+.header{
+    height: 80px;
+    padding: 0 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(350deg,coral, antiquewhite);
+}
+
+.nav ul li{
+    padding: 0 40px;
+    font-size: 23px;
+    color: black;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    background-color:antiquewhite;
+    padding: 0 7vw;
+}
+.main1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.main1 div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.main1 div:nth-child(1){
+    padding-top: 20px;
+    flex: 1;
+    font-size: 30px;
+}
+
+.main1 div:nth-child(1) p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.main1 div:nth-child(1) span{
+    color: coral;
+}
+
+.main1 div:nth-child(2) img{
+    border-radius: 60%;
+    margin-left: 70px;
+}
+
+.btn1{
+    margin-top: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: black;
+    line-height: 50px;
+    background-color: coral;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid coral;
+    box-shadow: 0 8px 16px coral;
+    transition: all 0.2s;
+}
+
+.btn1:hover{
+    background-color: orangered;
+    transition-duration: 1s;
+}
+.main2{
+    margin: 70px 0;
+    padding: 20px 0;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+.food1{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+.food1 div{
+    height: 160px;
+}
+.food1 img{
+    width: 160px;
+    margin-bottom: 15px;
+}
+.food1 p{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.food2{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+.food2 div{
+    height: 160px;
+}
+.food2 img{
+    width: 160px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+.food2 p{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.food3{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+.food3 div{
+    height: 160px;
+}
+.food3 img{
+    width: 160px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+.food3 p{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
