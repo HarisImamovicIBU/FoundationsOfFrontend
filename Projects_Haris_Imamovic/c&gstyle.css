@@ -8,6 +8,7 @@
 }
 body{
     background-color: antiquewhite;
+    line-height: 1.5;
 }
 .logo img{
     width: 110px;
@@ -16,26 +17,27 @@ body{
 }
 .logo p{
     float: right;
+    color: white;
     margin-top: 36px;
     font-size: 23px;
 }
-.header{
+.main-header{
     height: 84px;
     padding: 0 7vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(350deg, darkseagreen, antiquewhite)
+    background-image: linear-gradient(290deg, darkgreen, green)
 }
 
-.nav ul li{
+.navigation ul li{
     padding: 0 40px;
     font-size: 23px;
-    color: black;
+    color: white;
     transition: font-size 0.7s;
 }
 
-.header ul{
+.main-header ul{
     display: flex;
     align-items: center;
 }
@@ -83,22 +85,23 @@ body{
     margin-top: 20px;
     width: 160px;
     font-weight: bold;
-    color: black;
+    color: antiquewhite;
     line-height: 50px;
-    background-color:darkseagreen;
+    background-color:darkgreen;
     cursor: pointer;
     border-radius: 6px;
-    border: 2px solid darkseagreen;
-    box-shadow: 0 9px 18px darkseagreen;
+    border: 2px solid green;
+    box-shadow: 0 9px 18px green;
     transition: all 0.4s;
 }
 
 .btn1:hover{
-    background-color:green;
+    background-color:rgb(14, 49, 25);
     width: 170px;
     transition-duration: 0.7s;
     font-size: 14px;
     box-shadow: 0 18px 18px darkseagreen;
+    color: white
 }
 .main2{
     margin: 70px 0;
@@ -196,37 +199,78 @@ body{
     justify-content: flex-start;
 }
 
-.footer{
-    padding: 0px;
-    background-color: darkseagreen;
-    border-top: 2px solid green;
-    justify-content: space-around;
-    align-items: center;
+.fcontainer{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
-
-.footer1 h3{
-    padding: 4px;
+.footer-col ul{
+    list-style: none;
+}
+.footer{
+    background-color: rgb(14, 49, 25);
+      padding: 70px 0;
+  }
+.footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
     background-color: darkseagreen;
-}
-.footer2{
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
     text-align: center;
-    background-color: darkseagreen;
-}
-.footer2 h2{
-    padding: 4px;
-    background-color: darkseagreen;
-}
-.footer2 img{
-    width: 260px;
-    background-color: darkseagreen;
-    height: 260px;
-    margin-bottom: 14px;
-}
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: darkslategray;
+    background-color: white;
+  }
 
-.nav ul li:hover{
+.navigation ul li:hover{
     transition-duration: 0.7s;
     font-size: 30px;
 }
@@ -245,20 +289,20 @@ body{
     padding: 100px 0;
 }
 
-.container{
+.about-container{
     width: 62%;
     float: right;
     background-color: antiquewhite;
     padding: 150px;
 }
 
-.container h1{
+.about-container h1{
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
     color: green;
 }
-.container p{
+.about-container p{
     font-size: 15px;
     color: black;
     line-height: 30px;
@@ -271,4 +315,19 @@ body{
     justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
+}
+
+.vid {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.vid video {
+    padding: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
