@@ -30,7 +30,7 @@ body{
     background-image: linear-gradient(290deg, darkgreen, green)
 }
 
-.navigation ul li{
+.main-header .navigation ul li{
     padding: 0 40px;
     font-size: 23px;
     color: white;
@@ -270,7 +270,7 @@ body{
     background-color: white;
   }
 
-.navigation ul li:hover{
+.main-header .navigation ul li:hover{
     transition-duration: 0.7s;
     font-size: 30px;
 }
@@ -358,6 +358,8 @@ body{
     flex-shrink: 0;
     object-fit: cover;
     margin-right: 1.5em;
+    border-radius: 20px;
+    border: 1px solid green;
 }
 .menu-text{
     flex-grow: 1;
@@ -368,9 +370,60 @@ body{
     justify-content: center;
 }
 .food-name{
-    margin-right: 1.5em;
+    margin: auto;
 }
 .food-description{
     line-height: 1.5;
 
+}
+.form-area{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.row.single-form{
+    box-shadow: 0 3px 20px 10px darkseagreen;
+    background: antiquewhite;
+}
+.left{
+    background: green;
+    padding: 200px 98px;
+    margin-left: -15px;
+}
+.left h2{
+    color: lightgray;
+    font-weight: 100;
+    font-size: 48px;
+}
+.left h2 span{
+    font-weight: 100;
+    color: antiquewhite;
+}
+.right{
+    padding: 70px 100px;
+    position: relative;
+}
+.right i{
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: antiquewhite
+}
+.form-control{
+    border: 2px solid black;
+}
+.right button{
+    border: none;
+    background: darkgreen;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.right button:hover{
+    background-color:rgb(14, 49, 25);
+    transition-duration: 0.7s;
+    box-shadow: 0 18px 18px darkseagreen;
+    color: white
 }
