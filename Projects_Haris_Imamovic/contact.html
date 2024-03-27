@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="c&gstyle.css">
     <title>Chill&Grill</title>
+    <style>
+      .modal-dialog{
+        animation: modal-animation 0.3s ease-out;
+    }
+       @keyframes modal-animation {
+         from{ transform: scale(0.5); opacity: 0;}
+         to{ transform: scale(1); opacity: 1;}
+}
+    </style>
 </head>
 <body>
     <header>
@@ -17,14 +26,17 @@
                 <p>Chill&Grill</p>
             </div>
         <div class="navigation">
-            <ul>
-                <a href="c&g.html">
+            <ul style="margin-top: 15px;"> <!--When I included bootstrap in this document, my nav bar 
+                                          margins got messed up. I tried different solutions, like giving my CSS file 
+                                          priority in the <head>, but it didn't work so I used CSS 
+                                          style like this.-->
+                <a href="c&g.html" style="text-decoration: none;">
                     <li>Home</li>
                 </a>
-                <a href="menu.html">
+                <a href="menu.html" style="text-decoration: none;">
                     <li>BBQ Menu</li>
                 </a>
-                <a href="about.html">
+                <a href="about.html" style="text-decoration: none;">
                     <li>About</li>
                 </a>
             </ul>
@@ -55,7 +67,25 @@
                                 <label for="exampleInputPassword1">Message</label>
                                 <textarea class="form-control" id="exampleInputPassword1" placeholder="Enter your message"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Submit Successful!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    Thank you for communicating with us! <br>We will reply very soon.
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </form>
                     </div>
                 </div>
@@ -81,7 +111,7 @@
            <div class="footer-col">
              <h4>Follow us</h4>
              <div class="social-links">
-               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/chillngrill2024/" target="_blank"><i class="fab fa-instagram"></i></a>
                <a href="#"><i class="fab fa-twitter"></i></a>
              </div>
            </div>
