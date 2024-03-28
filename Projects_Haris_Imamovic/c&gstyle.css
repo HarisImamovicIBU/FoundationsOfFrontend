@@ -310,7 +310,7 @@ body{
     margin-bottom: 40px;
 }
 
-.skills{
+.motto{
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -459,5 +459,117 @@ body{
     .main-header .navigation ul li {
         display: inline-block; 
         padding: 10px 20px; 
+    }
+    .main1 img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .main-header {
+        padding: 30px; 
+    }
+
+    .main1 img {
+        display: block;
+        margin: 0 auto; 
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    .main-header {
+        padding: 5px; 
+    }
+
+    .main-header .navigation ul li { 
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 18px; 
+    }
+    .logo img{
+        float: left;
+    }
+    .logo p{
+        font-size: 18px;
+    }
+    .main1 img {
+        display: block;
+        margin: 0 auto; 
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+@media only screen and (max-width: 419px) {
+    .main-header {
+        padding: 3px; 
+    }
+
+    .main-header .navigation ul li { 
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 13px; 
+    }
+    .main-header .navigation ul li:hover{
+        text-decoration: none;
+        animation: none;
+        transition: none;
+        font-size: 13px;
+    }
+    .logo img{
+        float: left;
+    }
+    .logo p{
+        font-size: 13px;
+    }
+    .main1 img {
+        display: block;
+        margin: 0 auto; 
+        max-width: 100%; 
+        height: auto; 
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .about_us {
+        background-size: 100% 100%;
+    }
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-container h1 {
+        font-size: 20px;
+    }
+
+    .about-container p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .motto span {
+        width: calc(50% - 10px);
+    }
+}
+@media only screen and (max-width: 480px) {
+    .about-container h1 {
+        font-size: 18px;
+    }
+
+    .about-container p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .motto span {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 780px) and (max-width: 1024px){
+    .about_us {
+        background-size: 100% 100%
     }
 }
