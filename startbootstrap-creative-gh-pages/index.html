@@ -200,6 +200,12 @@
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
+                            <!-- Date of birth input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="dob" type="date" data-sb-validations="required"/>
+                                <label for="dob">Date of Birth</label>
+                                <div class="invalid-feedback" data-sb-feedback="dob:required">A date of birth is required.</div>
+                            </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
@@ -216,9 +222,6 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
