@@ -46,5 +46,38 @@ window.addEventListener('DOMContentLoaded', event => {
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
     });
+    
+    //Toastr
+    $(document).ready(function(){
+        $("#toastrbutton").click(function(){
+            toastr.success('Thanks for enjoying our company!');
+        });
+    });
 
+    //Content toggle
+    $(document).ready(function(){
+        $(".toggle-btn").click(function(){
+            var targetId = $(this).attr('data-target');
+            $("#" + targetId).toggle();
+        });
+        $("#tg1").hide();
+    });
+
+    //REST API
+    $(document).ready(function() {
+        fetch('https://restcountries.com/v3.1/all')
+        .then(response => response.json())
+        .then(data => {
+            // Populate the dropdown menu with the list of countries
+            const countryDropdown = document.getElementById('country');
+            data.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.name.common;
+                option.text = country.name.common;
+                countryDropdown.appendChild(option);
+            });
+        })
+        .catch(error => console.error('Error fetching countries:', error));
+    });
+    
 });
