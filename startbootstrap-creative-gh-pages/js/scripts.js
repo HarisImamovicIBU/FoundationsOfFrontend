@@ -79,5 +79,60 @@ window.addEventListener('DOMContentLoaded', event => {
         })
         .catch(error => console.error('Error fetching countries:', error));
     });
+
+    //Theme switcher
+    document.getElementById("themeSwitcher").addEventListener("click", function(){
+        const body=document.body;
+        body.classList.toggle("dark-theme");
+    })
+
+    //Data driven content
+
+    $(document).ready(function() {
+        $.ajax({
+            url: 'data.json',
+            dataType: 'json',
+            success: function(data) {
+                $('#jsonheading').text(data.jsonheading);
+            }
+        });
+        $('button:contains("Write")').click(function() {
+            var newText = prompt('Enter new text:');
+            if (newText !== null) {
+                $('#jsonheading').text(newText);
+                updateJson('jsonheading', newText);
+            }
+        });
+        $('button:contains("Delete")').click(function() {
+            if (confirm('Are you sure you want to delete?')) {
+                $('#jsonheading').text('');
+                //Update JSON file with empty text
+                updateJson('jsonheading', '');
+            }
+        });
     
+        function updateJson(key, value) {
+            $.ajax({
+                url: 'data.json',
+                dataType: 'json',
+                success: function(data) {
+                    //Update the JSON object with new value
+                    data[key] = value;
+                    //Write object back to the file
+                    $.ajax({
+                        url: 'data.json',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(data),
+                        success: function(response) {
+                            console.log('JSON file updated successfully.');
+                        },
+                        error: function(xhr, status, error) {
+                            console.error('Error updating JSON file:', error);
+                        }
+                    });
+                }
+            });
+        }
+    }); 
 });
