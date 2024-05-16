@@ -86,8 +86,8 @@ window.addEventListener('DOMContentLoaded', event => {
         body.classList.toggle("dark-theme");
     })
 
-    //Data driven content
 
+    //Data driven content
     $(document).ready(function() {
         $.ajax({
             url: 'data.json',
@@ -101,6 +101,7 @@ window.addEventListener('DOMContentLoaded', event => {
             if (newText !== null) {
                 $('#jsonheading').text(newText);
                 updateJson('jsonheading', newText);
+                toastr.success('Text successfully edited!');
             }
         });
         $('button:contains("Delete")').click(function() {
@@ -108,9 +109,10 @@ window.addEventListener('DOMContentLoaded', event => {
                 $('#jsonheading').text('');
                 //Update JSON file with empty text
                 updateJson('jsonheading', '');
+                toastr.success('Text successfully deleted!');
             }
         });
-    
+
         function updateJson(key, value) {
             $.ajax({
                 url: 'data.json',
@@ -135,4 +137,24 @@ window.addEventListener('DOMContentLoaded', event => {
             });
         }
     }); 
+
+    //From submission using ajax
+    $(document).ready(function () {
+        $("#contactForm").submit(function (event) {
+            event.preventDefault();
+            const formData = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: "index.html",
+                data: formData,
+                success: function () {
+                    $("#submitSuccessMessage").removeClass("d-none");
+                    $("#contactForm")[0].reset();
+                },
+                error: function () {
+                    $("#submitErrorMessage").removeClass("d-none");
+                }
+            });
+        });
+    });
 });
