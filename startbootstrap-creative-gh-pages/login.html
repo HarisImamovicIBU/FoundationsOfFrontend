@@ -6,47 +6,49 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Login - IdeaHub</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles -->
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet">
+    <!-- Toastr CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="index.html#page-top">IdeaHub</a>
-        </div>
-    </nav>
-
-    <!-- Login Form -->
+    <!-- Login Form-->
     <section class="page-section" id="login">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
                     <h2 class="mt-0">Login to IdeaHub</h2>
-                    <hr class="divider" />
-                    <form id="loginForm">
+                    <hr class="divider">
+                    <p class="text-muted mb-5">Enter your credentials to access your account.</p>
+                    <form id="login-form">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="loginEmail" type="email" placeholder="name@example.com" required />
-                            <label for="loginEmail">Email address</label>
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" required>
+                            <label for="email">Email address</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="loginPassword" type="password" placeholder="Password" required />
-                            <label for="loginPassword">Password</label>
+                            <input class="form-control" id="password" type="password" placeholder="Password" required>
+                            <label for="password">Password</label>
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary btn-xl" id="loginButton" type="submit">Login</button>
+                            <button class="btn btn-primary btn-xl" type="submit">Login</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Bootstrap core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom scripts -->
-    <script src="js/login.js"></script>
+    <!-- Toastr JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- User Service Script-->
+    <script src="services/user-service.js"></script>
 </body>
 </html>
