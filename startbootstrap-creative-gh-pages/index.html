@@ -34,6 +34,8 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Ideas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link logout-link" id="logout-button">Logout</a></li>
+            
                     </ul>
                 </div>
             </div>
@@ -303,7 +305,17 @@
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
+        <script src="services/user-service.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            $(document).ready(function() {
+                console.log("Document is ready");
+                $('#logout-button').on('click', function() {
+                    console.log("Logout button clicked.");
+                    UserService.logout();
+                });
+            });
+        </script>
     </body>
 </html>

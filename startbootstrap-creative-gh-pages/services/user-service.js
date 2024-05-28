@@ -1,5 +1,8 @@
+console.log("UserService script loaded.");
+
 let UserService = {
     init: function () {
+        console.log("UserService initialized.");
         this.checkIfLoggedIn();
         $("#login-form").on("submit", function (event) {
             event.preventDefault();
@@ -10,35 +13,31 @@ let UserService = {
     },
 
     checkIfLoggedIn: function () {
+        let urlParams = new URLSearchParams(window.location.search);
+        let skipCheck = urlParams.has('skipCheck');
         let token = localStorage.getItem("token");
-        console.log('Checking if logged in. Token:', token); //Testing
-        if (token) {
+
+        if (token && !skipCheck && window.location.pathname.endsWith("login.html")) {
             window.location.replace("index.html");
         }
     },
 
     login: function (user) {
-        console.log('Attempting to log in with user:', user); //Testing
-
-        // Simulating fetching users from localStorage
         let users = JSON.parse(localStorage.getItem("users")) || [];
-        console.log('Fetched users:', users); //Testing
         let foundUser = users.find(u => u.email === user.email && u.password === user.password);
 
         if (foundUser) {
-            console.log('User found:', foundUser); //Testing
-            localStorage.setItem("token", btoa(user.email)); //Token representation
+            localStorage.setItem("token", btoa(user.email));
             window.location.replace("index.html");
         } else {
-            console.log('Invalid credentials'); 
             toastr.error('Invalid credentials');
         }
     },
 
     logout: function () {
-        console.log('Logging out');
+        console.log("Logging out...");
         localStorage.removeItem("token");
-        window.location.replace("login.html");
+        window.location.replace("login.html?skipCheck=true");
     },
 };
 
