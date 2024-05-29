@@ -12,5 +12,12 @@
         "email": "std2@stu.ibu.edu.ba",
         "password": "123",
         "admin": false
+    },
+    {
+        "id": 3,
+        "name": "STD3",
+        "email": "std3@stu.ibu.edu.ba",
+        "password": "1234",
+        "admin": false
     }   
 ]

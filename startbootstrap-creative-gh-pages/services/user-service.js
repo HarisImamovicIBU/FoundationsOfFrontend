@@ -47,7 +47,8 @@ $(document).ready(function() {
 if (!localStorage.getItem("users")) {
     let users = [
         { id: 1, name: "STD1", email: "std1@stu.ibu.edu.ba", password: "12", admin: true },
-        { id: 2, name: "STD2", email: "std2@stu.ibu.edu.ba", password: "123", admin: false }
-    ];
+        { id: 2, name: "STD2", email: "std2@stu.ibu.edu.ba", password: "123", admin: false },
+        { id: 3, name: "STD3", email: "std3@stu.ibu.edu.ba", password: "1234", admin: false}
+    ]; //localStorage.clear(); ???
     localStorage.setItem("users", JSON.stringify(users));
 }
