@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 18px;
+    height: 100dvh;
+    min-height: 500px;
+    background-color: rgb(15, 15, 15);
+}
+.image_container{
+    position: relative;
+}
+.avatar{
+    max-width: 240px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.information h2, h3{
+    color: whitesmoke;
+}
+
+span {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    a {
+      margin: 0;
+      img {
+        width: 30px;
+      }
+    }
+}
+a{
+    width: fit-content;
+    align-self: center;
+}
