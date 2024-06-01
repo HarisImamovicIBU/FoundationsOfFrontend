@@ -12,7 +12,7 @@
     position: relative;
 }
 .avatar{
-    max-width: 240px;
+    max-width: 350px;
 }
 .information{
     display: flex;
@@ -22,7 +22,9 @@
 .information h2, h3{
     color: whitesmoke;
 }
-
+.text{
+    color: whitesmoke;
+}
 span {
     display: flex;
     gap: 25px;
@@ -37,4 +39,29 @@ span {
 a{
     width: fit-content;
     align-self: center;
+}
+@media (width>=1400px){
+    .container{
+        .avatar{
+            max-width: 400px;
+            width: 400px;
+        }
+    }
+}
+@media (width>=800px) {
+    .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      .avatar {
+        max-width: 350px;
+        width: 350px;
+      }
+    }
+}
+@media (width<=350px){
+    .image_container img{
+        width: 200px;
+    }
 }

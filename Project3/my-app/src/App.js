@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import Avatar from './pages/Avatar/Avatar'
+import Projects from './pages/Projects/Projects'
 import './App.css';
 
 function App() {
   return (
     <>
     <Avatar />
+    <Projects />
     </>
   );
 }

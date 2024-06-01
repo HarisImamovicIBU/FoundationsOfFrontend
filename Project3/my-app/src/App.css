@@ -27,7 +27,46 @@
 .App-link {
   color: #61dafb;
 }
-
+#root{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+h2, h3, p{
+  font-family: "Rubik", sans-serif;
+}
+h2{
+  text-transform: uppercase;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+@media (width>=800px){
+  #root{
+    gap: 100px;
+  }
+  h2{
+    font-size: 35px;
+  }
+  h3{
+    font-size: 22px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+@media (width>=1400px) {
+  #root {
+    gap: 200px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  .sectionTitle {
+    margin-bottom: 75px;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
