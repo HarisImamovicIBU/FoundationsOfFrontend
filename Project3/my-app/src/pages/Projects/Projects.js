@@ -1,5 +1,7 @@
 import styles from './ProjectsStyles.module.css';
-import sportImage from '../../assets/sport-image.svg';
+import sportImage from '../../assets/sport.png';
+import cgImage from '../../assets/hamburger.png';
+import techImage from '../../assets/tech.png';
 function Projects() {
     return (
         <section id="projects" className={styles.container}>
@@ -10,10 +12,10 @@ function Projects() {
                     <img src={sportImage} alt="Project 1" className={styles.project_image} />
                 </div>
                 <div className={styles.project_item}>
-                    <img src={sportImage} alt="Project 2" className={styles.project_image} />
+                    <img src={cgImage} alt="Project 2" className={styles.project_image} />
                 </div>
                 <div className={styles.project_item}>
-                    <img src={sportImage} alt="Project 3" className={styles.project_image} />
+                    <img src={techImage} alt="Project 3" className={styles.project_image} />
                 </div>
 
             </div>
