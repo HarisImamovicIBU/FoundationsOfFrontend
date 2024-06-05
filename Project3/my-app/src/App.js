@@ -1,6 +1,6 @@
+import './App.css';
 import Avatar from './pages/Avatar/Avatar'
 import Projects from './pages/Projects/Projects'
-import './App.css';
 
 function App() {
   return (
