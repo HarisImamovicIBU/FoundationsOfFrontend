@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container span{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.skills_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: whitesmoke;
+    margin: 30px auto;
+}
+p{
+    color: whitesmoke;
+}
