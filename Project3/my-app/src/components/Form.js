@@ -106,7 +106,7 @@ function Form() {
                                 <TextField
                                     label="Message"
                                     multiline
-                                    rows={4} //If a message is longer the container will enlarge
+                                    rows={4}
                                     placeholder="Enter your message"
                                     variant="outlined"
                                     fullWidth

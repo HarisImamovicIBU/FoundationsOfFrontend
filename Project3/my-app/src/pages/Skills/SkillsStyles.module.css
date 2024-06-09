@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 55vh;
+    height: 56vh;
     margin-top: 10vh;
 }
 .container span{
@@ -25,4 +25,9 @@ hr {
 }
 p{
     color: whitesmoke;
+}
+@media (height>980px){
+    .container{
+        height: 70vh;
+    }
 }

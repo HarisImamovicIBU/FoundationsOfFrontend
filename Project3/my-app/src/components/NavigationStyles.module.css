@@ -27,3 +27,9 @@
 .navItem a:hover {
     text-decoration: underline;
 }
+
+@media (width<=310px){
+    .navItem a{
+        font-size: 0.8em;
+    }
+}
