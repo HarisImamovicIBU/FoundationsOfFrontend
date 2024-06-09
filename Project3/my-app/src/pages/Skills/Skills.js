@@ -19,6 +19,14 @@ function Skills(){
                 <SkillsComp skill="Ruby" />
                 <SkillsComp skill="Rust" />
            </div>
+           <hr />
+           <div className={styles.skills_container}>
+                <SkillsComp skill="SQL" />
+                <SkillsComp skill="Kotlin" />
+                <SkillsComp skill="PHP" />
+                <SkillsComp skill="Swift" />
+                <SkillsComp skill="Go" />
+           </div>
         </section>
     );
 }

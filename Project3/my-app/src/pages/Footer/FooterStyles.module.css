@@ -1,0 +1,9 @@
+.container {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+.container p {
+    font-size: 20px;
+    color: whitesmoke;
+}

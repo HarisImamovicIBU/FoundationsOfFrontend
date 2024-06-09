@@ -4,7 +4,7 @@
     text-align: center;
     flex-direction: column;
     gap: 18px;
-    height: 100dvh;
+    height: 70vh;
     min-height: 500px;
     background-color: rgb(15, 15, 15);
 }
@@ -60,7 +60,7 @@ a{
       }
     }
 }
-@media (width<=350px){
+@media (width<800px){
     .image_container img{
         width: 200px;
     }

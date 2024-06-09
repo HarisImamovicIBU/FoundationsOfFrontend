@@ -10,19 +10,19 @@ function Projects() {
             <div className={styles.projects_container}>
             <ProjectsImage
           src={sportImage}
-          link="https://github.com"
+          link="https://github.com/HarisImamovicIBU/FoundationsOfFrontend.git"
           h3="SE Ticketing"
           p="Sports ticketing systm"
         />
         <ProjectsImage
           src={cgImage}
-          link="https://github.com"
+          link="https://github.com/HarisImamovicIBU/FoundationsOfFrontend.git"
           h3="ChillnGrill"
           p="Restaurant website"
         />
         <ProjectsImage
           src={techImage}
-          link="https://github.com"
+          link="https://github.com/HarisImamovicIBU/FoundationsOfFrontend.git"
           h3="TechCo"
           p="Tech shop"
         />

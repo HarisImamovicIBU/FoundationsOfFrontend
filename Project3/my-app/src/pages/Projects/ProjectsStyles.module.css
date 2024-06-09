@@ -10,6 +10,7 @@
     transition: transform 200ms ease-in-out;
   }
 .container img {
+    margin-top: 10vh;
     max-width: 250px;
     align-self: center;
     background-color: whitesmoke;
@@ -34,5 +35,6 @@ h2{
       flex-wrap: wrap;
       justify-content: space-evenly;
       padding: 0 30px;
+      height: 70vh
     }
 }
